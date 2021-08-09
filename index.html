@@ -19,6 +19,13 @@
         $BV.ui('rr', 'show_reviews', {
           doShowContent : function () {}
         });
+
+        setInterval(function(){
+          var element=document.querySelectorAll('#bv-dropdown-select-review-sortby li:nth-child(1)');
+          if(element.length){
+            element[0].focus();
+          }
+        }, 1000);
       </script>
   </body>
 </html>
