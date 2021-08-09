@@ -23,6 +23,7 @@
         setInterval(function(){
           var element=document.querySelectorAll('#bv-dropdown-select-review-sortby li:nth-child(1)');
           if(element.length){
+            console.log(element);
             element[0].focus();
             element[0].setAttribute('aria-selected', true);
           }
