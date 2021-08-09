@@ -24,6 +24,7 @@
           var element=document.querySelectorAll('#bv-dropdown-select-review-sortby li:nth-child(1)');
           if(element.length){
             element[0].focus();
+            element[0].setAttribute('aria-selected', true);
           }
         }, 1000);
       </script>
