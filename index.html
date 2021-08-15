@@ -26,10 +26,9 @@
         });
 
         setInterval(function(){
-          var review_option=document.querySelectorAll('#bv-dropdown-select-reviews-sortby .bv-dropdown-in ul');
-          var question_option=document.querySelectorAll('#bv-dropdown-select-questions-sortby .bv-dropdown-in ul');
+          var review_option=document.querySelectorAll('#bv-dropdown-select-reviews-sortby li:nth-child(1)');
+          var question_option=document.querySelectorAll('#bv-dropdown-select-questions-sortby li:nth-child(1)');
           if(review_option.length){
-            review_option[0].classList.add('bv-focusable');
             review_option[0].focus();
           }
           
