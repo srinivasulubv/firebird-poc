@@ -5,7 +5,7 @@
     <title>Test Client Integration Page</title>
     <link rel="icon" href="data:image/png;base64,iVBORw0KGgo=">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-    <script src='https://display.ugc.bazaarvoice.com/static/Agileville/srinivasuluTest/en_US/bvapi.js'></script>
+    <script src='http://192.168.1.100/Walgreens/bazaarvoice.js?clientname=Walgreens&siteid=main_site&environment=PRODUCTION&locale=en_US'></script>
     <style>
       body {
         font-family: Helvetica, Arial, sans-serif;
@@ -18,28 +18,11 @@
       <div id="BVQAContainer"></div>
       
       <script>
-        $BV.configure('global', {productId : 'product1'});
+        $BV.configure('global', {productId : '300396260'});
         
         $BV.ui('rr', 'show_reviews', {
           doShowContent : function () {}
         });
-
-        $BV.ui('qa', 'show_questions', {
-          doShowContent : function () {}
-        });
-
-        setInterval(function(){
-          var review_option=document.querySelectorAll('#bv-dropdown-select-reviews-sortby li:nth-child(1)');
-          var question_option=document.querySelectorAll('#bv-dropdown-select-questions-sortby li:nth-child(1)');
-          if(review_option.length){
-            review_option[0].focus();
-          }
-          
-          if(question_option.length){
-            question_option[0].focus();
-          }
-
-        }, 1000);
       </script>
   </body>
 </html>
